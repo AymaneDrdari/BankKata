@@ -2,10 +2,6 @@ package com.skypay.bankkata;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
-
-import java.util.List;
-
 import static org.mockito.Mockito.*;
 
 class AccountTest {
@@ -15,7 +11,7 @@ class AccountTest {
 
     @BeforeEach
     void setUp() {
-        statementPrinter = mock(StatementPrinter.class); // Crée un mock de StatementPrinter
+        statementPrinter = mock(StatementPrinter.class);
         account = new Account();
     }
 
