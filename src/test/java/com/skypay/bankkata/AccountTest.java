@@ -48,7 +48,6 @@ class AccountTest {
 
         account.printStatement();
 
-        // Vérifie que la méthode print de StatementPrinter a été appelée avec la liste des transactions
         verify(statementPrinter, times(1)).print(anyList());
     }
 }
